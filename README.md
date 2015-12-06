@@ -2,13 +2,14 @@
 Lightweight and NoJS snowflakes for Xmas ☃
 
 ---
-[Demo]()
+[Demo](https://jsfiddle.net/buom_01/hyd8k76w/1/embedded/result/)
 ## Installation
-Just add this line in <head> section
+Add this file in your client floder: `https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/style.min.css`
+and add this line to <head> section, replace FILE_LINK by the file link from your server:
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/style.min.css"/>
+<link rel="stylesheet" href="FILE_LINK"/>
 ```
-and this in <body> section
+and this in <body> section add:
 ```html
   <div class="snow">
     <span>&#10052;</span>
