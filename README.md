@@ -132,3 +132,7 @@ Then run:
 lessc --autoprefix="> 2%, last 3 version" style.less style.css
 cleancss style.css -o style.min.css
 ```
+
+## Todo
+- Rotations on flakes
+- Differents html versions with 25/50/75 flakes
