@@ -3,16 +3,16 @@
   margin: 0;
   padding: 0;
   color: white;
-}
-.snow * {
-  margin: 0;
-  padding: 0;
+  pointer-events: none;
 }
 .snow span {
   text-shadow: 0px 0px 5px #08F;
   position: fixed;
   z-index: 999999;
   opacity: 0.95;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
   top: -5%;
   /* sizes */
   /* fall animation */
