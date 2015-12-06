@@ -9,7 +9,7 @@ and add this line to <head> section, replace FILE_LINK by the file link from you
 ```html
 <link rel="stylesheet" href="FILE_LINK"/>
 ```
-and this in <body> section add:
+and this in <body> section add: (you should use 25xN flakes, 4x25=100 in this case)
 ```html
   <div class="snow">
     <span>&#10052;</span>
