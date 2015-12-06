@@ -1,5 +1,6 @@
 # ❆❅❄ SnowFlakes.css ❄❅❆
 Lightweight and NoJS snowflakes for Xmas ☃
+Need more tests, 
 
 ---
 [Demo](https://jsfiddle.net/buom_01/hyd8k76w/1/embedded/result/)
@@ -9,7 +10,7 @@ and add this line to <head> section, replace FILE_LINK by the file link from you
 ```html
 <link rel="stylesheet" href="FILE_LINK"/>
 ```
-and this in <body> section add: (you should use 25xN flakes, 4x25=100 in this case)
+and this in <body> section add: (you should use 25xN flakes, 4x25=100 in this case, I recommand 25 for mobiles devices)
 ```html
   <div class="snow">
     <span>&#10052;</span>
