@@ -1,11 +1,19 @@
 /*! MIT License; https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/LICENSE */
 .snow {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: 0;
   padding: 0;
   color: white;
   pointer-events: none;
   span {
-    text-shadow: 0px 0px 5px #08F;
+    text-shadow: 0 0 5px #08F;
     position: fixed;
     z-index: 999999;
     opacity: 0.95;
@@ -96,19 +104,19 @@
     }
     /* left-right animation: movement size */
     &:nth-child(5n+1) {
-          animation-name: left_right1, fall;
+      animation-name: left_right1, fall;
     }
     &:nth-child(5n+2) {
-          animation-name: left_right2, fall;
+      animation-name: left_right2, fall;
     }
     &:nth-child(5n+3) {
-          animation-name: left_right3, fall;
+      animation-name: left_right3, fall;
     }
     &:nth-child(5n+4) {
-          animation-name: left_right4, fall;
+      animation-name: left_right4, fall;
     }
     &:nth-child(5n+5) {
-          animation-name: left_right5, fall;
+      animation-name: left_right5, fall;
     }
     /* left-right animation: duration */
     &:nth-child(7n+1) {
@@ -134,7 +142,7 @@
     }
     /* Positions */
     &:nth-child(100n+1) {
-      left: 0%;
+      left: 0;
     }
     &:nth-child(100n+2) {
       left: 4%;
