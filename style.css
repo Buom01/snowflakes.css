@@ -59,7 +59,6 @@ a:hover {
 .page header h1>span:after {
   content: '❅';
   color: white;
-  font-size: 40px;
 }
 .page p {
   padding: 5px 15px;
