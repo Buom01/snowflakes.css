@@ -12,6 +12,7 @@
   padding: 0;
   color: white;
   pointer-events: none;
+  user-select: none;
   span {
     text-shadow: 0 0 5px #08F;
     position: fixed;
@@ -23,30 +24,48 @@
     top: -5%;
     /* sizes */
     &:nth-child(4n+1) {
-      font-size: 8px;
-    }
-    &:nth-child(4n+2) {
       font-size: 10px;
     }
-    &:nth-child(4n+3) {
+    &:nth-child(4n+2) {
       font-size: 12px;
     }
-    &:nth-child(4n+4) {
+    &:nth-child(4n+3) {
       font-size: 14px;
+    }
+    &:nth-child(4n+4) {
+      font-size: 16px;
     }
     /* fall animation */
     @keyframes fall {
       0% {
-        top: -5%;
+        top: -10%;
       }
       100% {
-        top: 105%;
+        top: 110%;
+      }
+    }
+
+    /* rotation animation */
+    @keyframes rot {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(60deg);
+      }
+    }
+    @keyframes rot_r {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-60deg);
       }
     }
 
     /* left-right animation */
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out, linear;
+    animation-timing-function: ease-in-out, linear, linear;
     @keyframes left_right1 {
       0% {
         margin-left: 0;
@@ -103,42 +122,78 @@
       }
     }
     /* left-right animation: movement size */
-    &:nth-child(5n+1) {
-      animation-name: left_right1, fall;
+    &:nth-child(10n+1) {
+      animation-name: left_right1, fall, rot_r;
     }
-    &:nth-child(5n+2) {
-      animation-name: left_right2, fall;
+    &:nth-child(10n+2) {
+      animation-name: left_right2, fall, rot_r;
     }
-    &:nth-child(5n+3) {
-      animation-name: left_right3, fall;
+    &:nth-child(10n+3) {
+      animation-name: left_right3, fall, rot;
     }
-    &:nth-child(5n+4) {
-      animation-name: left_right4, fall;
+    &:nth-child(10n+4) {
+      animation-name: left_right4, fall, rot_r;
     }
-    &:nth-child(5n+5) {
-      animation-name: left_right5, fall;
+    &:nth-child(10n+5) {
+      animation-name: left_right5, fall, rot;
+    }
+    &:nth-child(10n+6) {
+      animation-name: left_right1, fall, rot;
+    }
+    &:nth-child(10n+7) {
+      animation-name: left_right2, fall, rot;
+    }
+    &:nth-child(10n+8) {
+      animation-name: left_right3, fall, rot_r;
+    }
+    &:nth-child(10n+9) {
+      animation-name: left_right4, fall, rot;
+    }
+    &:nth-child(10n+10) {
+      animation-name: left_right5, fall, rot_r;
     }
     /* left-right animation: duration */
-    &:nth-child(7n+1) {
-      animation-duration: 3000ms, 9500ms;
+    &:nth-child(14n+1) {
+      animation-duration: 3000ms, 9500ms, 950ms;
     }
-    &:nth-child(7n+2) {
-      animation-duration: 3250ms, 9000ms;
+    &:nth-child(14n+2) {
+      animation-duration: 3250ms, 9000ms, 1150ms;
     }
-    &:nth-child(7n+3) {
-      animation-duration: 3500ms, 9750ms;
+    &:nth-child(14n+3) {
+      animation-duration: 3500ms, 9750ms, 1000ms;
     }
-    &:nth-child(7n+4) {
-      animation-duration: 3750ms, 9250ms;
+    &:nth-child(14n+4) {
+      animation-duration: 3750ms, 9250ms, 850ms;
     }
-    &:nth-child(7n+5) {
-      animation-duration: 4000ms, 10500ms;
+    &:nth-child(14n+5) {
+      animation-duration: 4000ms, 10500ms, 1050ms;
     }
-    &:nth-child(7n+6) {
-      animation-duration: 4500ms, 10000ms;
+    &:nth-child(14n+6) {
+      animation-duration: 4500ms, 10000ms, 900ms;
     }
-    &:nth-child(7n+7) {
-      animation-duration: 5000ms, 10250ms;
+    &:nth-child(14n+7) {
+      animation-duration: 5000ms, 10250ms, 1100ms;
+    }
+    &:nth-child(14n+8) {
+      animation-duration: 3000ms, 9500ms, 900ms;
+    }
+    &:nth-child(14n+9) {
+      animation-duration: 3250ms, 9000ms, 1100ms;
+    }
+    &:nth-child(14n+10) {
+      animation-duration: 3500ms, 9750ms, 1000ms;
+    }
+    &:nth-child(14n+11) {
+      animation-duration: 3750ms, 9250ms, 850ms;
+    }
+    &:nth-child(14n+12) {
+      animation-duration: 4000ms, 10500ms, 1050ms;
+    }
+    &:nth-child(14n+13) {
+      animation-duration: 4500ms, 10000ms, 950ms;
+    }
+    &:nth-child(14n+14) {
+      animation-duration: 5000ms, 10250ms, 1150ms;
     }
     /* Positions */
     &:nth-child(100n+1) {

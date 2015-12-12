@@ -12,6 +12,10 @@
   padding: 0;
   color: white;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .snow span {
   text-shadow: 0 0 5px #08F;
@@ -24,42 +28,83 @@
   top: -5%;
   /* sizes */
   /* fall animation */
+  /* rotation animation */
   /* left-right animation */
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out, linear;
-          animation-timing-function: ease-in-out, linear;
+  -webkit-animation-timing-function: ease-in-out, linear, linear;
+          animation-timing-function: ease-in-out, linear, linear;
   /* left-right animation: movement size */
   /* left-right animation: duration */
   /* Positions */
   /* delay */
 }
 .snow span:nth-child(4n+1) {
-  font-size: 8px;
-}
-.snow span:nth-child(4n+2) {
   font-size: 10px;
 }
-.snow span:nth-child(4n+3) {
+.snow span:nth-child(4n+2) {
   font-size: 12px;
 }
-.snow span:nth-child(4n+4) {
+.snow span:nth-child(4n+3) {
   font-size: 14px;
+}
+.snow span:nth-child(4n+4) {
+  font-size: 16px;
 }
 @-webkit-keyframes fall {
   0% {
-    top: -5%;
+    top: -10%;
   }
   100% {
-    top: 105%;
+    top: 110%;
   }
 }
 @keyframes fall {
   0% {
-    top: -5%;
+    top: -10%;
   }
   100% {
-    top: 105%;
+    top: 110%;
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+}
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+}
+@-webkit-keyframes rot_r {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+}
+@keyframes rot_r {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
   }
 }
 @-webkit-keyframes left_right1 {
@@ -172,53 +217,101 @@
     margin-left: 0;
   }
 }
-.snow span:nth-child(5n+1) {
-  -webkit-animation-name: left_right1, fall;
-          animation-name: left_right1, fall;
+.snow span:nth-child(10n+1) {
+  -webkit-animation-name: left_right1, fall, rot_r;
+          animation-name: left_right1, fall, rot_r;
 }
-.snow span:nth-child(5n+2) {
-  -webkit-animation-name: left_right2, fall;
-          animation-name: left_right2, fall;
+.snow span:nth-child(10n+2) {
+  -webkit-animation-name: left_right2, fall, rot_r;
+          animation-name: left_right2, fall, rot_r;
 }
-.snow span:nth-child(5n+3) {
-  -webkit-animation-name: left_right3, fall;
-          animation-name: left_right3, fall;
+.snow span:nth-child(10n+3) {
+  -webkit-animation-name: left_right3, fall, rot;
+          animation-name: left_right3, fall, rot;
 }
-.snow span:nth-child(5n+4) {
-  -webkit-animation-name: left_right4, fall;
-          animation-name: left_right4, fall;
+.snow span:nth-child(10n+4) {
+  -webkit-animation-name: left_right4, fall, rot_r;
+          animation-name: left_right4, fall, rot_r;
 }
-.snow span:nth-child(5n+5) {
-  -webkit-animation-name: left_right5, fall;
-          animation-name: left_right5, fall;
+.snow span:nth-child(10n+5) {
+  -webkit-animation-name: left_right5, fall, rot;
+          animation-name: left_right5, fall, rot;
 }
-.snow span:nth-child(7n+1) {
-  -webkit-animation-duration: 3000ms, 9500ms;
-          animation-duration: 3000ms, 9500ms;
+.snow span:nth-child(10n+6) {
+  -webkit-animation-name: left_right1, fall, rot;
+          animation-name: left_right1, fall, rot;
 }
-.snow span:nth-child(7n+2) {
-  -webkit-animation-duration: 3250ms, 9000ms;
-          animation-duration: 3250ms, 9000ms;
+.snow span:nth-child(10n+7) {
+  -webkit-animation-name: left_right2, fall, rot;
+          animation-name: left_right2, fall, rot;
 }
-.snow span:nth-child(7n+3) {
-  -webkit-animation-duration: 3500ms, 9750ms;
-          animation-duration: 3500ms, 9750ms;
+.snow span:nth-child(10n+8) {
+  -webkit-animation-name: left_right3, fall, rot_r;
+          animation-name: left_right3, fall, rot_r;
 }
-.snow span:nth-child(7n+4) {
-  -webkit-animation-duration: 3750ms, 9250ms;
-          animation-duration: 3750ms, 9250ms;
+.snow span:nth-child(10n+9) {
+  -webkit-animation-name: left_right4, fall, rot;
+          animation-name: left_right4, fall, rot;
 }
-.snow span:nth-child(7n+5) {
-  -webkit-animation-duration: 4000ms, 10500ms;
-          animation-duration: 4000ms, 10500ms;
+.snow span:nth-child(10n+10) {
+  -webkit-animation-name: left_right5, fall, rot_r;
+          animation-name: left_right5, fall, rot_r;
 }
-.snow span:nth-child(7n+6) {
-  -webkit-animation-duration: 4500ms, 10000ms;
-          animation-duration: 4500ms, 10000ms;
+.snow span:nth-child(14n+1) {
+  -webkit-animation-duration: 3000ms, 9500ms, 950ms;
+          animation-duration: 3000ms, 9500ms, 950ms;
 }
-.snow span:nth-child(7n+7) {
-  -webkit-animation-duration: 5000ms, 10250ms;
-          animation-duration: 5000ms, 10250ms;
+.snow span:nth-child(14n+2) {
+  -webkit-animation-duration: 3250ms, 9000ms, 1150ms;
+          animation-duration: 3250ms, 9000ms, 1150ms;
+}
+.snow span:nth-child(14n+3) {
+  -webkit-animation-duration: 3500ms, 9750ms, 1000ms;
+          animation-duration: 3500ms, 9750ms, 1000ms;
+}
+.snow span:nth-child(14n+4) {
+  -webkit-animation-duration: 3750ms, 9250ms, 850ms;
+          animation-duration: 3750ms, 9250ms, 850ms;
+}
+.snow span:nth-child(14n+5) {
+  -webkit-animation-duration: 4000ms, 10500ms, 1050ms;
+          animation-duration: 4000ms, 10500ms, 1050ms;
+}
+.snow span:nth-child(14n+6) {
+  -webkit-animation-duration: 4500ms, 10000ms, 900ms;
+          animation-duration: 4500ms, 10000ms, 900ms;
+}
+.snow span:nth-child(14n+7) {
+  -webkit-animation-duration: 5000ms, 10250ms, 1100ms;
+          animation-duration: 5000ms, 10250ms, 1100ms;
+}
+.snow span:nth-child(14n+8) {
+  -webkit-animation-duration: 3000ms, 9500ms, 900ms;
+          animation-duration: 3000ms, 9500ms, 900ms;
+}
+.snow span:nth-child(14n+9) {
+  -webkit-animation-duration: 3250ms, 9000ms, 1100ms;
+          animation-duration: 3250ms, 9000ms, 1100ms;
+}
+.snow span:nth-child(14n+10) {
+  -webkit-animation-duration: 3500ms, 9750ms, 1000ms;
+          animation-duration: 3500ms, 9750ms, 1000ms;
+}
+.snow span:nth-child(14n+11) {
+  -webkit-animation-duration: 3750ms, 9250ms, 850ms;
+          animation-duration: 3750ms, 9250ms, 850ms;
+}
+.snow span:nth-child(14n+12) {
+  -webkit-animation-duration: 4000ms, 10500ms, 1050ms;
+          animation-duration: 4000ms, 10500ms, 1050ms;
+}
+.snow span:nth-child(14n+13) {
+  -webkit-animation-duration: 4500ms, 10000ms, 950ms;
+          animation-duration: 4500ms, 10000ms, 950ms;
+}
+.snow span:nth-child(14n+14) {
+  -webkit-animation-duration: 5000ms, 10250ms, 1150ms;
+          animation-duration: 5000ms, 10250ms, 1150ms;
 }
 .snow span:nth-child(100n+1) {
   left: 0;
