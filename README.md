@@ -128,6 +128,14 @@ Ensure you have got `less`, `less-plugin-autoprefix` and `clean-css`
 npm install -g less less-plugin-autoprefix clean-css
 ```
 Then run:
+
+On linux:
+```bash
+./build.sh
+```
+----OR----
+
+On all:
 ```bash
 lessc --autoprefix="> 2%, last 3 version" style.less style.css
 cleancss style.css -o style.min.css
