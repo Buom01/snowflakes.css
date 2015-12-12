@@ -7,10 +7,10 @@ Lightweight and NoJS snowflakes for Xmas ☃
 [Demo](https://jsfiddle.net/buom_01/hyd8k76w/1/embedded/result/)
 ## Installation
 ### Noob installation/CMS
-Just insert inline code from [noobcode](https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/noobscript)
+Just insert inline code from [noobcode](https://raw.githubusercontent.com/Buom01/snowflakes.css/master/noobscript)
 
 ### Standard installation
-**Add this file** in your client floder: `https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/style.min.css`
+**Add this file** in your client floder: `https://raw.githubusercontent.com/Buom01/snowflakes.css/master/style.min.css`
 and **add this line** to `<head>` section, replace FILE_LINK by the file link from your server:
 ```html
 <link rel="stylesheet" href="FILE_LINK"/>
