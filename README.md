@@ -1,12 +1,13 @@
 # ❆❅❄ SnowFlakes.css ❄❅❆
 Lightweight and NoJS snowflakes for Xmas ☃
-Need more tests, 
+
+> Warning: Need more tests
 
 ---
 [Demo](https://jsfiddle.net/buom_01/hyd8k76w/1/embedded/result/)
 ## Installation
 ### Noob installation/CMS
-Just insert inline code from [noobcode](https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/noobcode)
+Just insert inline code from [noobcode](https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/noobscript)
 
 ### Standard installation
 Add this file in your client floder: `https://raw.githubusercontent.com/Buom01/-snowflakes.css-/master/style.min.css`
@@ -131,3 +132,7 @@ Then run:
 lessc --autoprefix="> 2%, last 3 version" style.less style.css
 cleancss style.css -o style.min.css
 ```
+
+## Todo
+- Rotations on flakes
+- Differents html versions with 25/50/75 flakes
