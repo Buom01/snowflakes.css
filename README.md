@@ -4,7 +4,7 @@ Lightweight and NoJS snowflakes for Xmas ☃
 > Warning: Need more tests
 
 ---
-[Demo](https://jsfiddle.net/buom_01/hyd8k76w/1/embedded/result/)
+[Demo](https://buom01.github.io/snowflakes.css/)
 ## Installation
 ### Noob installation/CMS
 Just insert inline code from [noobcode](https://raw.githubusercontent.com/Buom01/snowflakes.css/master/noobscript)
