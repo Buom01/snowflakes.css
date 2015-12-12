@@ -142,5 +142,5 @@ cleancss style.css -o style.min.css
 ```
 
 ## Todo
-- Rotations on flakes
-- Differents html versions with 25/50/75 flakes
+- [X] Rotations on flakes
+- [ ] Differents html versions with 25/50/75 flakes
