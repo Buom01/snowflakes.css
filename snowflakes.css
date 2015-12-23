@@ -18,7 +18,7 @@
           user-select: none;
   z-index: 999999;
 }
-.snow span {
+.snow p {
   text-shadow: 0 0 5px #08F;
   position: fixed;
   z-index: 999999;
@@ -27,6 +27,7 @@
   padding: 0;
   pointer-events: none;
   top: -5%;
+  /* snowflakes */
   /* sizes */
   /* fall animation */
   /* rotation animation */
@@ -40,16 +41,25 @@
   /* Positions */
   /* delay */
 }
-.snow span:nth-child(4n+1) {
+.snow p:nth-child(3n+1):before {
+  content: '❄';
+}
+.snow p:nth-child(3n+2):before {
+  content: '❅';
+}
+.snow p:nth-child(3n+3):before {
+  content: '❆';
+}
+.snow p:nth-child(4n+1) {
   font-size: 10px;
 }
-.snow span:nth-child(4n+2) {
+.snow p:nth-child(4n+2) {
   font-size: 12px;
 }
-.snow span:nth-child(4n+3) {
+.snow p:nth-child(4n+3) {
   font-size: 14px;
 }
-.snow span:nth-child(4n+4) {
+.snow p:nth-child(4n+4) {
   font-size: 16px;
 }
 @-webkit-keyframes fall {
@@ -218,463 +228,463 @@
     margin-left: 0;
   }
 }
-.snow span:nth-child(10n+1) {
+.snow p:nth-child(10n+1) {
   -webkit-animation-name: left_right1, fall, rot_r;
           animation-name: left_right1, fall, rot_r;
 }
-.snow span:nth-child(10n+2) {
+.snow p:nth-child(10n+2) {
   -webkit-animation-name: left_right2, fall, rot_r;
           animation-name: left_right2, fall, rot_r;
 }
-.snow span:nth-child(10n+3) {
+.snow p:nth-child(10n+3) {
   -webkit-animation-name: left_right3, fall, rot;
           animation-name: left_right3, fall, rot;
 }
-.snow span:nth-child(10n+4) {
+.snow p:nth-child(10n+4) {
   -webkit-animation-name: left_right4, fall, rot_r;
           animation-name: left_right4, fall, rot_r;
 }
-.snow span:nth-child(10n+5) {
+.snow p:nth-child(10n+5) {
   -webkit-animation-name: left_right5, fall, rot;
           animation-name: left_right5, fall, rot;
 }
-.snow span:nth-child(10n+6) {
+.snow p:nth-child(10n+6) {
   -webkit-animation-name: left_right1, fall, rot;
           animation-name: left_right1, fall, rot;
 }
-.snow span:nth-child(10n+7) {
+.snow p:nth-child(10n+7) {
   -webkit-animation-name: left_right2, fall, rot;
           animation-name: left_right2, fall, rot;
 }
-.snow span:nth-child(10n+8) {
+.snow p:nth-child(10n+8) {
   -webkit-animation-name: left_right3, fall, rot_r;
           animation-name: left_right3, fall, rot_r;
 }
-.snow span:nth-child(10n+9) {
+.snow p:nth-child(10n+9) {
   -webkit-animation-name: left_right4, fall, rot;
           animation-name: left_right4, fall, rot;
 }
-.snow span:nth-child(10n+10) {
+.snow p:nth-child(10n+10) {
   -webkit-animation-name: left_right5, fall, rot_r;
           animation-name: left_right5, fall, rot_r;
 }
-.snow span:nth-child(14n+1) {
+.snow p:nth-child(14n+1) {
   -webkit-animation-duration: 3000ms, 9500ms, 950ms;
           animation-duration: 3000ms, 9500ms, 950ms;
 }
-.snow span:nth-child(14n+2) {
+.snow p:nth-child(14n+2) {
   -webkit-animation-duration: 3250ms, 9000ms, 1150ms;
           animation-duration: 3250ms, 9000ms, 1150ms;
 }
-.snow span:nth-child(14n+3) {
+.snow p:nth-child(14n+3) {
   -webkit-animation-duration: 3500ms, 9750ms, 1000ms;
           animation-duration: 3500ms, 9750ms, 1000ms;
 }
-.snow span:nth-child(14n+4) {
+.snow p:nth-child(14n+4) {
   -webkit-animation-duration: 3750ms, 9250ms, 850ms;
           animation-duration: 3750ms, 9250ms, 850ms;
 }
-.snow span:nth-child(14n+5) {
+.snow p:nth-child(14n+5) {
   -webkit-animation-duration: 4000ms, 10500ms, 1050ms;
           animation-duration: 4000ms, 10500ms, 1050ms;
 }
-.snow span:nth-child(14n+6) {
+.snow p:nth-child(14n+6) {
   -webkit-animation-duration: 4500ms, 10000ms, 900ms;
           animation-duration: 4500ms, 10000ms, 900ms;
 }
-.snow span:nth-child(14n+7) {
+.snow p:nth-child(14n+7) {
   -webkit-animation-duration: 5000ms, 10250ms, 1100ms;
           animation-duration: 5000ms, 10250ms, 1100ms;
 }
-.snow span:nth-child(14n+8) {
+.snow p:nth-child(14n+8) {
   -webkit-animation-duration: 3000ms, 9500ms, 900ms;
           animation-duration: 3000ms, 9500ms, 900ms;
 }
-.snow span:nth-child(14n+9) {
+.snow p:nth-child(14n+9) {
   -webkit-animation-duration: 3250ms, 9000ms, 1100ms;
           animation-duration: 3250ms, 9000ms, 1100ms;
 }
-.snow span:nth-child(14n+10) {
+.snow p:nth-child(14n+10) {
   -webkit-animation-duration: 3500ms, 9750ms, 1000ms;
           animation-duration: 3500ms, 9750ms, 1000ms;
 }
-.snow span:nth-child(14n+11) {
+.snow p:nth-child(14n+11) {
   -webkit-animation-duration: 3750ms, 9250ms, 850ms;
           animation-duration: 3750ms, 9250ms, 850ms;
 }
-.snow span:nth-child(14n+12) {
+.snow p:nth-child(14n+12) {
   -webkit-animation-duration: 4000ms, 10500ms, 1050ms;
           animation-duration: 4000ms, 10500ms, 1050ms;
 }
-.snow span:nth-child(14n+13) {
+.snow p:nth-child(14n+13) {
   -webkit-animation-duration: 4500ms, 10000ms, 950ms;
           animation-duration: 4500ms, 10000ms, 950ms;
 }
-.snow span:nth-child(14n+14) {
+.snow p:nth-child(14n+14) {
   -webkit-animation-duration: 5000ms, 10250ms, 1150ms;
           animation-duration: 5000ms, 10250ms, 1150ms;
 }
-.snow span:nth-child(100n+1) {
+.snow p:nth-child(100n+1) {
   left: 0;
 }
-.snow span:nth-child(100n+2) {
+.snow p:nth-child(100n+2) {
   left: 4%;
 }
-.snow span:nth-child(100n+3) {
+.snow p:nth-child(100n+3) {
   left: 8%;
 }
-.snow span:nth-child(100n+4) {
+.snow p:nth-child(100n+4) {
   left: 12%;
 }
-.snow span:nth-child(100n+5) {
+.snow p:nth-child(100n+5) {
   left: 16%;
 }
-.snow span:nth-child(100n+6) {
+.snow p:nth-child(100n+6) {
   left: 20%;
 }
-.snow span:nth-child(100n+7) {
+.snow p:nth-child(100n+7) {
   left: 24%;
 }
-.snow span:nth-child(100n+8) {
+.snow p:nth-child(100n+8) {
   left: 28%;
 }
-.snow span:nth-child(100n+9) {
+.snow p:nth-child(100n+9) {
   left: 32%;
 }
-.snow span:nth-child(100n+10) {
+.snow p:nth-child(100n+10) {
   left: 36%;
 }
-.snow span:nth-child(100n+11) {
+.snow p:nth-child(100n+11) {
   left: 40%;
 }
-.snow span:nth-child(100n+12) {
+.snow p:nth-child(100n+12) {
   left: 44%;
 }
-.snow span:nth-child(100n+13) {
+.snow p:nth-child(100n+13) {
   left: 48%;
 }
-.snow span:nth-child(100n+14) {
+.snow p:nth-child(100n+14) {
   left: 52%;
 }
-.snow span:nth-child(100n+15) {
+.snow p:nth-child(100n+15) {
   left: 56%;
 }
-.snow span:nth-child(100n+16) {
+.snow p:nth-child(100n+16) {
   left: 60%;
 }
-.snow span:nth-child(100n+17) {
+.snow p:nth-child(100n+17) {
   left: 64%;
 }
-.snow span:nth-child(100n+18) {
+.snow p:nth-child(100n+18) {
   left: 68%;
 }
-.snow span:nth-child(100n+19) {
+.snow p:nth-child(100n+19) {
   left: 72%;
 }
-.snow span:nth-child(100n+20) {
+.snow p:nth-child(100n+20) {
   left: 76%;
 }
-.snow span:nth-child(100n+21) {
+.snow p:nth-child(100n+21) {
   left: 80%;
 }
-.snow span:nth-child(100n+22) {
+.snow p:nth-child(100n+22) {
   left: 84%;
 }
-.snow span:nth-child(100n+23) {
+.snow p:nth-child(100n+23) {
   left: 88%;
 }
-.snow span:nth-child(100n+24) {
+.snow p:nth-child(100n+24) {
   left: 92%;
 }
-.snow span:nth-child(100n+25) {
+.snow p:nth-child(100n+25) {
   left: 96%;
 }
-.snow span:nth-child(100n+26) {
+.snow p:nth-child(100n+26) {
   left: 100%;
 }
-.snow span:nth-child(100n+27) {
+.snow p:nth-child(100n+27) {
   left: 2%;
 }
-.snow span:nth-child(100n+28) {
+.snow p:nth-child(100n+28) {
   left: 6%;
 }
-.snow span:nth-child(100n+29) {
+.snow p:nth-child(100n+29) {
   left: 10%;
 }
-.snow span:nth-child(100n+30) {
+.snow p:nth-child(100n+30) {
   left: 14%;
 }
-.snow span:nth-child(100n+31) {
+.snow p:nth-child(100n+31) {
   left: 18%;
 }
-.snow span:nth-child(100n+32) {
+.snow p:nth-child(100n+32) {
   left: 22%;
 }
-.snow span:nth-child(100n+33) {
+.snow p:nth-child(100n+33) {
   left: 26%;
 }
-.snow span:nth-child(100n+34) {
+.snow p:nth-child(100n+34) {
   left: 30%;
 }
-.snow span:nth-child(100n+35) {
+.snow p:nth-child(100n+35) {
   left: 34%;
 }
-.snow span:nth-child(100n+36) {
+.snow p:nth-child(100n+36) {
   left: 38%;
 }
-.snow span:nth-child(100n+37) {
+.snow p:nth-child(100n+37) {
   left: 42%;
 }
-.snow span:nth-child(100n+38) {
+.snow p:nth-child(100n+38) {
   left: 46%;
 }
-.snow span:nth-child(100n+39) {
+.snow p:nth-child(100n+39) {
   left: 50%;
 }
-.snow span:nth-child(100n+40) {
+.snow p:nth-child(100n+40) {
   left: 54%;
 }
-.snow span:nth-child(100n+41) {
+.snow p:nth-child(100n+41) {
   left: 58%;
 }
-.snow span:nth-child(100n+42) {
+.snow p:nth-child(100n+42) {
   left: 62%;
 }
-.snow span:nth-child(100n+43) {
+.snow p:nth-child(100n+43) {
   left: 66%;
 }
-.snow span:nth-child(100n+44) {
+.snow p:nth-child(100n+44) {
   left: 74%;
 }
-.snow span:nth-child(100n+45) {
+.snow p:nth-child(100n+45) {
   left: 78%;
 }
-.snow span:nth-child(100n+46) {
+.snow p:nth-child(100n+46) {
   left: 82%;
 }
-.snow span:nth-child(100n+47) {
+.snow p:nth-child(100n+47) {
   left: 86%;
 }
-.snow span:nth-child(100n+48) {
+.snow p:nth-child(100n+48) {
   left: 90%;
 }
-.snow span:nth-child(100n+49) {
+.snow p:nth-child(100n+49) {
   left: 94%;
 }
-.snow span:nth-child(100n+50) {
+.snow p:nth-child(100n+50) {
   left: 98%;
 }
-.snow span:nth-child(100n+51) {
+.snow p:nth-child(100n+51) {
   left: 1%;
 }
-.snow span:nth-child(100n+52) {
+.snow p:nth-child(100n+52) {
   left: 5%;
 }
-.snow span:nth-child(100n+53) {
+.snow p:nth-child(100n+53) {
   left: 9%;
 }
-.snow span:nth-child(100n+54) {
+.snow p:nth-child(100n+54) {
   left: 13%;
 }
-.snow span:nth-child(100n+55) {
+.snow p:nth-child(100n+55) {
   left: 17%;
 }
-.snow span:nth-child(100n+56) {
+.snow p:nth-child(100n+56) {
   left: 21%;
 }
-.snow span:nth-child(100n+57) {
+.snow p:nth-child(100n+57) {
   left: 25%;
 }
-.snow span:nth-child(100n+58) {
+.snow p:nth-child(100n+58) {
   left: 29%;
 }
-.snow span:nth-child(100n+59) {
+.snow p:nth-child(100n+59) {
   left: 33%;
 }
-.snow span:nth-child(100n+60) {
+.snow p:nth-child(100n+60) {
   left: 37%;
 }
-.snow span:nth-child(100n+61) {
+.snow p:nth-child(100n+61) {
   left: 41%;
 }
-.snow span:nth-child(100n+62) {
+.snow p:nth-child(100n+62) {
   left: 45%;
 }
-.snow span:nth-child(100n+63) {
+.snow p:nth-child(100n+63) {
   left: 49%;
 }
-.snow span:nth-child(100n+64) {
+.snow p:nth-child(100n+64) {
   left: 53%;
 }
-.snow span:nth-child(100n+65) {
+.snow p:nth-child(100n+65) {
   left: 57%;
 }
-.snow span:nth-child(100n+66) {
+.snow p:nth-child(100n+66) {
   left: 61%;
 }
-.snow span:nth-child(100n+67) {
+.snow p:nth-child(100n+67) {
   left: 65%;
 }
-.snow span:nth-child(100n+68) {
+.snow p:nth-child(100n+68) {
   left: 69%;
 }
-.snow span:nth-child(100n+69) {
+.snow p:nth-child(100n+69) {
   left: 73%;
 }
-.snow span:nth-child(100n+70) {
+.snow p:nth-child(100n+70) {
   left: 77%;
 }
-.snow span:nth-child(100n+71) {
+.snow p:nth-child(100n+71) {
   left: 81%;
 }
-.snow span:nth-child(100n+72) {
+.snow p:nth-child(100n+72) {
   left: 85%;
 }
-.snow span:nth-child(100n+73) {
+.snow p:nth-child(100n+73) {
   left: 89%;
 }
-.snow span:nth-child(100n+74) {
+.snow p:nth-child(100n+74) {
   left: 93%;
 }
-.snow span:nth-child(100n+75) {
+.snow p:nth-child(100n+75) {
   left: 97%;
 }
-.snow span:nth-child(100n+76) {
+.snow p:nth-child(100n+76) {
   left: 3%;
 }
-.snow span:nth-child(100n+77) {
+.snow p:nth-child(100n+77) {
   left: 7%;
 }
-.snow span:nth-child(100n+78) {
+.snow p:nth-child(100n+78) {
   left: 11%;
 }
-.snow span:nth-child(100n+79) {
+.snow p:nth-child(100n+79) {
   left: 15%;
 }
-.snow span:nth-child(100n+80) {
+.snow p:nth-child(100n+80) {
   left: 19%;
 }
-.snow span:nth-child(100n+81) {
+.snow p:nth-child(100n+81) {
   left: 23%;
 }
-.snow span:nth-child(100n+82) {
+.snow p:nth-child(100n+82) {
   left: 27%;
 }
-.snow span:nth-child(100n+83) {
+.snow p:nth-child(100n+83) {
   left: 31%;
 }
-.snow span:nth-child(100n+84) {
+.snow p:nth-child(100n+84) {
   left: 34%;
 }
-.snow span:nth-child(100n+85) {
+.snow p:nth-child(100n+85) {
   left: 37%;
 }
-.snow span:nth-child(100n+86) {
+.snow p:nth-child(100n+86) {
   left: 41%;
 }
-.snow span:nth-child(100n+87) {
+.snow p:nth-child(100n+87) {
   left: 45%;
 }
-.snow span:nth-child(100n+88) {
+.snow p:nth-child(100n+88) {
   left: 49%;
 }
-.snow span:nth-child(100n+89) {
+.snow p:nth-child(100n+89) {
   left: 53%;
 }
-.snow span:nth-child(100n+90) {
+.snow p:nth-child(100n+90) {
   left: 57%;
 }
-.snow span:nth-child(100n+91) {
+.snow p:nth-child(100n+91) {
   left: 61%;
 }
-.snow span:nth-child(100n+92) {
+.snow p:nth-child(100n+92) {
   left: 65%;
 }
-.snow span:nth-child(100n+93) {
+.snow p:nth-child(100n+93) {
   left: 69%;
 }
-.snow span:nth-child(100n+94) {
+.snow p:nth-child(100n+94) {
   left: 73%;
 }
-.snow span:nth-child(100n+95) {
+.snow p:nth-child(100n+95) {
   left: 77%;
 }
-.snow span:nth-child(100n+96) {
+.snow p:nth-child(100n+96) {
   left: 81%;
 }
-.snow span:nth-child(100n+97) {
+.snow p:nth-child(100n+97) {
   left: 85%;
 }
-.snow span:nth-child(100n+98) {
+.snow p:nth-child(100n+98) {
   left: 89%;
 }
-.snow span:nth-child(100n+99) {
+.snow p:nth-child(100n+99) {
   left: 93%;
 }
-.snow span:nth-child(100n+100) {
+.snow p:nth-child(100n+100) {
   left: 97%;
 }
-.snow span:nth-child(16n+15) {
+.snow p:nth-child(16n+15) {
   -webkit-animation-delay: 0ms;
           animation-delay: 0ms;
 }
-.snow span:nth-child(16n+14) {
+.snow p:nth-child(16n+14) {
   -webkit-animation-delay: -531ms;
           animation-delay: -531ms;
 }
-.snow span:nth-child(16n+9) {
+.snow p:nth-child(16n+9) {
   -webkit-animation-delay: -1063ms;
           animation-delay: -1063ms;
 }
-.snow span:nth-child(16n+8) {
+.snow p:nth-child(16n+8) {
   -webkit-animation-delay: -1594ms;
           animation-delay: -1594ms;
 }
-.snow span:nth-child(16n+10) {
+.snow p:nth-child(16n+10) {
   -webkit-animation-delay: -2125ms;
           animation-delay: -2125ms;
 }
-.snow span:nth-child(16n+1) {
+.snow p:nth-child(16n+1) {
   -webkit-animation-delay: -2656ms;
           animation-delay: -2656ms;
 }
-.snow span:nth-child(16n+13) {
+.snow p:nth-child(16n+13) {
   -webkit-animation-delay: -3188ms;
           animation-delay: -3188ms;
 }
-.snow span:nth-child(16n+11) {
+.snow p:nth-child(16n+11) {
   -webkit-animation-delay: -3719ms;
           animation-delay: -3719ms;
 }
-.snow span:nth-child(16n+3) {
+.snow p:nth-child(16n+3) {
   -webkit-animation-delay: -4000ms;
           animation-delay: -4000ms;
 }
-.snow span:nth-child(16n+4) {
+.snow p:nth-child(16n+4) {
   -webkit-animation-delay: -4531ms;
           animation-delay: -4531ms;
 }
-.snow span:nth-child(16n+2) {
+.snow p:nth-child(16n+2) {
   -webkit-animation-delay: -5063ms;
           animation-delay: -5063ms;
 }
-.snow span:nth-child(16n+7) {
+.snow p:nth-child(16n+7) {
   -webkit-animation-delay: -5594ms;
           animation-delay: -5594ms;
 }
-.snow span:nth-child(16n+12) {
+.snow p:nth-child(16n+12) {
   -webkit-animation-delay: -6125ms;
           animation-delay: -6125ms;
 }
-.snow span:nth-child(16n+16) {
+.snow p:nth-child(16n+16) {
   -webkit-animation-delay: -6656ms;
           animation-delay: -6656ms;
 }
-.snow span:nth-child(16n+6) {
+.snow p:nth-child(16n+6) {
   -webkit-animation-delay: -7188ms;
           animation-delay: -7188ms;
 }
-.snow span:nth-child(16n+5) {
+.snow p:nth-child(16n+5) {
   -webkit-animation-delay: -7719ms;
           animation-delay: -7719ms;
 }

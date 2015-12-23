@@ -14,7 +14,7 @@
   pointer-events: none;
   user-select: none;
   z-index: 999999;
-  span {
+  p {
     text-shadow: 0 0 5px #08F;
     position: fixed;
     z-index: 999999;
@@ -23,6 +23,16 @@
     padding: 0;
     pointer-events: none;
     top: -5%;
+    /* snowflakes */
+    &:nth-child(3n+1):before{
+        content: '❄'; 
+    }
+    &:nth-child(3n+2):before{
+        content: '❅'; 
+    }
+    &:nth-child(3n+3):before{
+        content: '❆'; 
+    }
     /* sizes */
     &:nth-child(4n+1) {
       font-size: 10px;

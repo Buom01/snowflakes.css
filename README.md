@@ -40,6 +40,9 @@ lessc --autoprefix="> 2%, last 3 version" style.less style.css
 cleancss style.css -o style.min.css
 ```
 
+Finally you can use `preview.html` to preview the compilation (use a webserver or `--allow-file-access-from-files` flag for chrome)
+
 ## Todo
 - [X] Rotations on flakes
+- [X] Optimize HTML size
 - [ ] Differents html versions with 25/50/75 flakes
