@@ -3,6 +3,8 @@ Lightweight and NoJS snowflakes for Xmas ☃
 
 > Warning: Need more tests
 
+> Warning: Need to be optimized with css3's `transform` property
+
 ---
 [Demo](https://buom01.github.io/snowflakes.css/)
 ## Installation
@@ -46,3 +48,4 @@ Finally you can use `preview.html` to preview the compilation (use a webserver o
 - [X] Rotations on flakes
 - [X] Optimize HTML size
 - [ ] Differents html versions with 25/50/75 flakes
+- [ ] Optimize animations with css3 `transform` property
